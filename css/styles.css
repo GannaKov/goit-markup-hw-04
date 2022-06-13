@@ -136,26 +136,28 @@ body {
   color: var(--link-hover);
 }
 .header-contacts .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+  color: rgba(117, 117, 117, 1);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
 .header-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-/*.header-email {
-  margin-right: 50px;
-}*/
+.icon-envelope,
+.icon-handy {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
-}
-.header-contacts .link {
-  color: rgba(117, 117, 117, 1);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 /* ----в эффективности этого visited я сомневаюсь, 

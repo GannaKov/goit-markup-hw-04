@@ -167,10 +167,21 @@ body {
 
 /* ------- HERO 235px------*/
 .hero {
-  background-color: var(--hero-footer-color);
+  background-color: rgba(196, 196, 196, 1);
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
 }
 
+.hero-overlay {
+}
 .hero-content {
   padding: 200px 235px;
 }

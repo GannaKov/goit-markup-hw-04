@@ -351,22 +351,36 @@ body {
   display: block;
   padding: 0 32px;
 }
-
 .team-soc-list {
   display: flex;
 }
+
 .team-soc-item {
-  display: flex;
   margin-right: 10px;
+}
+
+.team-soc-item:last-child {
+  margin-right: 0;
+}
+
+.team-soc-link {
+  display: flex;
   width: 44px;
   height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: tomato;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(175, 177, 184, 1);
 }
-.team-soc-item:last-child {
-  margin-right: 0;
+.team-icon {
+  fill: currentColor;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--link-hover);
 }
 /* ------- Footer -------- */
 .page-footer {

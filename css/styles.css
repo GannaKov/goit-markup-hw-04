@@ -359,6 +359,8 @@ body {
 
 .team-soc-item {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
 }
 
 .team-soc-item:last-child {
@@ -367,8 +369,8 @@ body {
 
 .team-soc-link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -407,6 +409,7 @@ body {
   display: flex;
   flex-basis: calc((100% -6 * 30px) / 6);
   margin: 0 15px;
+  background-color: rgba(255, 255, 255, 1);
 }
 .clients-link {
   display: flex;
@@ -430,9 +433,16 @@ body {
 /* ------- Footer -------- */
 .page-footer {
   background-color: var(--hero-footer-color);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.footer-blocks {
+  display: flex;
+}
+.footer-block-address {
+  margin-right: 70px;
   padding: 60px 0;
 }
-
 .page-footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -471,6 +481,53 @@ body {
   color: var(--link-hover);
 }
 
+/* --- Footer soc links ---- */
+.footer-block-social {
+  padding-top: 72px;
+}
+.footer-block-social-title {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 1);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-item {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-item:last-child {
+  margin-right: 0;
+}
+
+.footer-soc-link {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--btn-fokus-text);
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--link-hover);
+}
+
 /* ----- Portfolio ------ */
 .examples {
 }
@@ -496,7 +553,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -512,8 +568,9 @@ body {
 .exaples-filter-btn:hover,
 .exaples-filter-btn:focus {
   color: var(--btn-fokus-text);
-
   background-color: var(--btn-background);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 /* ---- Список карточек ---------*/
 .examles-card {
@@ -525,17 +582,19 @@ body {
   margin-bottom: 56px;
 }
 
-.exaples-list {
+.examples-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
-.exaples-list-item {
+.examples-list-item {
   margin: 15px;
   /*flex-basis: calc((100%-60px) / 3);*/
   flex-basis: calc(100% / 3 - 30px);
 }
+
 .examples-link {
+  border: 1px solid #eeeeee;
 }
 /*.exaples-list-item:nth-of-type(3n) {
   margin-right: 0;
@@ -551,7 +610,6 @@ body {
 }*/
 .examples-content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }
 
 .examples-sec-title {
@@ -569,4 +627,8 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+.examples-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
